@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, Button, FlatList, Text, TouchableOpacity } from 'react-native';
-import { AntDesign } from '@expo/vector-icons'; // Importer AntDesign pour l'icône de la croix
+import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
   const [objectif, setObjectif] = useState('');
@@ -62,20 +62,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
-    width: '70%', // Ajusté pour laisser de la place au bouton
+    width: '70%',
     borderColor: 'black',
     borderWidth: 1,
     padding: 10,
-    marginRight: 10, // Ajouté pour espacer l'input du bouton
+    marginRight: 10, 
   },
   listItem: {
-    flexDirection: 'row', // Pour afficher l'objectif et la croix en ligne
+    flexDirection: 'row', 
     padding: 10,
     marginVertical: 10,
     backgroundColor: '#ccc',
     borderColor: 'black',
     borderWidth: 1,
-    justifyContent: 'space-between', // Espacer l'objectif et la croix
-    alignItems: 'center', // Centrer verticalement
+    justifyContent: 'space-between', 
+    alignItems: 'center',
   },
 });
